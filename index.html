@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="button">
+        <h1 id="h1">Você é gay??</h1>
+        <div id="btnContainer">
+            <button id="btnNo">Sim</button>
+            <button id="btnYes">Não</button>
+        </div>
+    </div>
+    <script>
+        const btnYes = document.getElementById('btnYes');
+        const btnNo = document.getElementById('btnNo');
+        const btnContainer = document.getElementById('btnContainer');
+        const h1 = document.getElementById('h1')
+
+        btnNo.addEventListener('click', redirectToWhatsapp);
+        btnYes.addEventListener('mouseenter', moveButton);
+        btnYes.addEventListener('click', moveButton);
+
+        function redirectToWhatsapp() {
+            window.location.href = 'https://www.youtube.com/watch?v=-MJ2nG1foRY';
+        }
+
+        function moveButton() {
+            const x = Math.floor(Math.random() * (btnContainer.clientWidth - btnYes.offsetWidth));
+            const y = Math.floor(Math.random() * (btnContainer.clientHeight - btnYes.offsetHeight));
+            btnYes.style.left = x + 'px';
+            btnYes.style.top = y + 'px';
+        }
+    </script>
+</body>
+</html>

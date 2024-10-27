@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: #fff;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.button {
+    margin: 20px;
+}
+
+#btnContainer {
+    position: relative;
+}
+
+#btnYes, #btnNo {
+    font-size: 18px;
+    position: absolute;
+    margin: 10px;
+}
+
+#btnYes {
+    left: 20px;
+    top: 0;
+}
+
+#btnNo {
+    left: 150px;
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    #btnYes, #btnNo {
+        font-size: 16px;
+    }
+}
